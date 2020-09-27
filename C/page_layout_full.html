@@ -8,7 +8,10 @@
     }
     .container{
         width: 720px;
-        margin:0 auto ;     
+        margin: 0 auto ;
+        display: flex;
+	   flex-direction: column;
+	   min-height: 100%;
     }
     header{
         background-color: white;
@@ -39,7 +42,7 @@
     }
     .main_section{
         background-color: white;
-        padding: 3px;
+        flex: 1 0 auto;
     }
     .cards{
         display: flex;
@@ -74,13 +77,15 @@
         width: 100%;
     }
     footer{
+       flex: 0 0 auto;
+        width: 720px;
         height: 32px;
         text-align: center;
         color: white;
         background-color:black;
-        margin-top: 30px;
         padding-top: 10px;
     }
+  
 </style>
 </head>
 <body>
@@ -160,6 +165,8 @@
         50.000$
       </div>
     </div>
+            
+
   </div>
 </section>
 <footer>
